@@ -1,0 +1,27 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <rect width="32" height="32" rx="8" fill="url(#gradient)"/>
+
+  <!-- Subtle inner shadow effect -->
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="none" stroke="url(#innerGlow)" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Text with slight shadow for depth -->
+  <text x="16" y="23" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="rgba(0,0,0,0.15)" text-anchor="middle">LD</text>
+  <text x="16" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="white" text-anchor="middle">LD</text>
+
+  <defs>
+    <!-- Main gradient from teal to cyan -->
+    <linearGradient id="gradient" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <!-- Inner glow effect -->
+    <linearGradient id="innerGlow" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="white" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>
+
