@@ -151,7 +151,7 @@ export const CVPDFDocument = () => (
         </View>
         <View style={styles.contactItem}>
           <Text style={styles.contactIcon}>📍</Text>
-          <Text>Nina Park, Welkom</Text>
+          <Text>Pretoria North</Text>
         </View>
 
         {/* Skills */}

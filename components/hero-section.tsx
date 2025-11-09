@@ -81,7 +81,7 @@ export function HeroSection() {
             </a>
             <span className="flex items-center gap-2">
               <MapPin className="h-4 w-4" />
-              Nina Park, Welkom
+              Pretoria North
             </span>
           </div>
         </div>

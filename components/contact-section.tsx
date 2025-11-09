@@ -59,9 +59,7 @@ export function ContactSection() {
                 <div>
                   <p className="font-semibold mb-1">Location</p>
                   <p className="text-sm text-muted-foreground">
-                    100 Jan Frederik Street
-                    <br />
-                    Nina Park, Welkom
+                    Pretoria North
                     <br />
                     South Africa
                   </p>
