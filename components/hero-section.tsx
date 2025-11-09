@@ -3,27 +3,26 @@
 import { Button } from "@/components/ui/button"
 import { Mail, Phone, MapPin, ArrowDown } from "lucide-react"
 import Image from "next/image"
+import { DownloadCVButton } from "./download-cv-button"
 
 export function HeroSection() {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 pt-20 pb-16 relative overflow-hidden">
       {/* Animated background gradient */}
-      <div
-        className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 animate-pulse"
-        style={{ animationDuration: "8s" }}
-      />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 animate-gradient" />
+      <div className="absolute inset-0 bg-gradient-to-tr from-accent/5 via-transparent to-primary/5 animate-gradient" style={{ animationDelay: "2s" }} />
 
       <div className="max-w-6xl mx-auto text-center relative z-10">
         <div className="animate-fade-in-up">
-          <div className="mb-8 inline-block">
-            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-primary to-secondary p-1 mx-auto">
+          <div className="mb-8 inline-block animate-float">
+            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-primary to-secondary p-1 mx-auto transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-primary/50">
               <div className="w-full h-full rounded-full overflow-hidden">
                 <Image
                   src="/profile_pic.jpeg"
                   alt="Leandri de Bruyn"
                   width={160}
                   height={160}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                   priority
                 />
               </div>
@@ -56,6 +55,7 @@ export function HeroSection() {
                 Contact Me
               </a>
             </Button>
+            <DownloadCVButton />
             <Button
               size="lg"
               variant="outline"

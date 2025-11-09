@@ -92,7 +92,7 @@ export function ExperienceSection() {
             {experiences.map((exp, index) => (
               <Card
                 key={index}
-                className="relative md:ml-20 p-6 md:p-8 hover:shadow-xl transition-all border-primary/10 group"
+                className="relative md:ml-20 p-6 md:p-8 hover:shadow-2xl transition-all duration-500 border-primary/10 group hover:-translate-y-1 hover-glow"
               >
                 {/* Timeline dot */}
                 <div className="hidden md:block absolute -left-[52px] top-8 w-4 h-4 rounded-full bg-gradient-to-br from-primary to-secondary border-4 border-background" />

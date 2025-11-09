@@ -83,7 +83,7 @@ export function SkillsSection() {
             return (
               <Card
                 key={index}
-                className="p-6 hover:shadow-xl transition-all transform hover:-translate-y-1 border-primary/10"
+                className="p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 border-primary/10 hover-glow group"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div
@@ -91,14 +91,16 @@ export function SkillsSection() {
                   >
                     <Icon className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-black">{category.title}</h3>
+                  <h3 className="text-xl font-bold text-black group-hover:text-primary transition-colors duration-300">
+                    {category.title}
+                  </h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, i) => (
                     <Badge
                       key={i}
                       variant="secondary"
-                      className="text-sm py-1 px-3 bg-accent/20 hover:bg-accent/30 transition-colors text-black"
+                      className="text-sm py-1 px-3 bg-accent/20 hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-110 text-black cursor-default"
                     >
                       {skill}
                     </Badge>
