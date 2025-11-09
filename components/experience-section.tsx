@@ -8,9 +8,9 @@ export function ExperienceSection() {
   const experiences = [
     {
       title: "Debtors Clerk & Administrative Specialist",
-      company: "MW Packaging (Pty) Ltd",
+      company: "Dumansi Trading CC",
       period: "October 2024 – Present",
-      location: "Welkom, South Africa",
+      location: "Pretoria, South Africa",
       description:
         "Managing the complete debtors function for a dynamic packaging company, ensuring financial accuracy and maintaining strong client relationships in a fast-paced manufacturing environment.",
       responsibilities: [
@@ -26,19 +26,19 @@ export function ExperienceSection() {
       current: true,
     },
     {
-      title: "Debtors Clerk, Receptionist & Cashier",
-      company: "Dumansi Trading CC",
+      title: "Sales Coordinator & Administrative Specialist",
+      company: "MW Packaging (Pty) Ltd",
       period: "2020 – 2024 (4 years)",
       location: "Welkom, South Africa",
       description:
-        "Evolved from front-line customer service into a comprehensive financial administration role, demonstrating adaptability and commitment to professional development.",
+        "Provided comprehensive sales coordination and administrative support for a dynamic packaging company, managing client relationships and ensuring seamless operations across multiple business functions.",
       responsibilities: [
-        "Maintained accurate debtor accounts using System IQ Retail",
-        "Built strong client relationships through consistent professional communication",
-        "Processed complex payment arrangements with zero discrepancies",
-        "Developed efficient filing and query resolution systems",
+        "Coordinated all sales-related activities and client communications",
+        "Managed comprehensive administrative functions supporting business operations",
+        "Served as primary receptionist, ensuring professional first-point-of-contact experience",
+        "Maintained accurate records and documentation across sales and administrative systems",
+        "Facilitated smooth communication between sales team, clients, and internal departments",
       ],
-      progression: ["2020-2021: Cashier and Receptionist", "2021-2024: Debtors Clerk"],
     },
     {
       title: "Manager",

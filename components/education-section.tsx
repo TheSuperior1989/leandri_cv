@@ -111,13 +111,13 @@ export function EducationSection() {
             </div>
 
             <div className="p-6 bg-card/50 rounded-lg border border-primary/10">
-              <h4 className="text-lg font-bold mb-1">Manny</h4>
-              <p className="text-sm text-muted-foreground mb-3">Smart Labels</p>
+              <h4 className="text-lg font-bold mb-1">Anelda</h4>
+              <p className="text-sm text-muted-foreground mb-3">MW Packaging (Pty) Ltd</p>
               <div className="space-y-1 text-sm">
                 <p className="flex items-center gap-2">
                   <span>📱</span>
-                  <a href="tel:0573525440" className="hover:text-primary transition-colors">
-                    057 352 5440
+                  <a href="tel:0823745430" className="hover:text-primary transition-colors">
+                    082 374 5430
                   </a>
                 </p>
               </div>
