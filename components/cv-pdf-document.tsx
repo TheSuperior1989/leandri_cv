@@ -60,17 +60,18 @@ const styles = StyleSheet.create({
   contactItem: {
     fontSize: 9,
     marginBottom: 8,
-    flexDirection: "row",
-    alignItems: "center",
   },
-  contactIcon: {
-    marginRight: 5,
-    fontSize: 10,
+  contactLabel: {
+    fontSize: 8,
+    fontWeight: "bold",
+    marginBottom: 2,
+    color: "#E0F2FE",
   },
   skillItem: {
     fontSize: 9,
-    marginBottom: 5,
-    paddingLeft: 10,
+    marginBottom: 4,
+    paddingLeft: 5,
+    lineHeight: 1.4,
   },
   experienceItem: {
     marginBottom: 15,
@@ -98,9 +99,9 @@ const styles = StyleSheet.create({
   },
   responsibility: {
     fontSize: 8,
-    marginBottom: 3,
-    paddingLeft: 10,
-    lineHeight: 1.3,
+    marginBottom: 2,
+    paddingLeft: 8,
+    lineHeight: 1.4,
   },
   badge: {
     backgroundColor: "#E0F2FE",
@@ -140,43 +141,43 @@ export const CVPDFDocument = () => (
         {/* Contact Information */}
         <Text style={styles.sectionTitle}>CONTACT</Text>
         <View style={styles.contactItem}>
-          <Text style={styles.contactIcon}>📱</Text>
+          <Text style={styles.contactLabel}>Phone</Text>
           <Text>063 288 5993</Text>
         </View>
         <View style={styles.contactItem}>
-          <Text style={styles.contactIcon}>📧</Text>
+          <Text style={styles.contactLabel}>Email</Text>
           <Link style={styles.link} src="mailto:Leandridbruyn@outlook.com">
             Leandridbruyn@outlook.com
           </Link>
         </View>
         <View style={styles.contactItem}>
-          <Text style={styles.contactIcon}>📍</Text>
-          <Text>Pretoria North</Text>
+          <Text style={styles.contactLabel}>Location</Text>
+          <Text>Pretoria North, South Africa</Text>
         </View>
 
         {/* Skills */}
         <Text style={styles.sectionTitle}>CORE SKILLS</Text>
-        <Text style={styles.skillItem}>• Age Analysis & Debt Collection</Text>
-        <Text style={styles.skillItem}>• Payment Processing</Text>
-        <Text style={styles.skillItem}>• Account Reconciliation</Text>
-        <Text style={styles.skillItem}>• Credit Control & ITC Checks</Text>
-        <Text style={styles.skillItem}>• Client Relations</Text>
-        <Text style={styles.skillItem}>• Financial Reporting</Text>
-        <Text style={styles.skillItem}>• Administrative Excellence</Text>
-        <Text style={styles.skillItem}>• Health & Safety Compliance</Text>
+        <Text style={styles.skillItem}>- Age Analysis & Debt Collection</Text>
+        <Text style={styles.skillItem}>- Payment Processing</Text>
+        <Text style={styles.skillItem}>- Account Reconciliation</Text>
+        <Text style={styles.skillItem}>- Credit Control & ITC Checks</Text>
+        <Text style={styles.skillItem}>- Client Relations</Text>
+        <Text style={styles.skillItem}>- Financial Reporting</Text>
+        <Text style={styles.skillItem}>- Administrative Excellence</Text>
+        <Text style={styles.skillItem}>- Health & Safety Compliance</Text>
 
         {/* Software */}
         <Text style={styles.sectionTitle}>SOFTWARE</Text>
-        <Text style={styles.skillItem}>• Acumatica</Text>
-        <Text style={styles.skillItem}>• Sage</Text>
-        <Text style={styles.skillItem}>• System IQ</Text>
-        <Text style={styles.skillItem}>• Microsoft Excel</Text>
-        <Text style={styles.skillItem}>• Microsoft Word</Text>
+        <Text style={styles.skillItem}>- Acumatica</Text>
+        <Text style={styles.skillItem}>- Sage</Text>
+        <Text style={styles.skillItem}>- System IQ</Text>
+        <Text style={styles.skillItem}>- Microsoft Excel</Text>
+        <Text style={styles.skillItem}>- Microsoft Word</Text>
 
         {/* Languages */}
         <Text style={styles.sectionTitle}>LANGUAGES</Text>
-        <Text style={styles.skillItem}>• English (Fluent)</Text>
-        <Text style={styles.skillItem}>• Afrikaans (Fluent)</Text>
+        <Text style={styles.skillItem}>- English (Fluent)</Text>
+        <Text style={styles.skillItem}>- Afrikaans (Fluent)</Text>
       </View>
 
       {/* Main Content */}
@@ -200,11 +201,11 @@ export const CVPDFDocument = () => (
             Managing complete debtors function for a dynamic packaging company, ensuring financial accuracy and
             maintaining strong client relationships.
           </Text>
-          <Text style={styles.responsibility}>→ Comprehensive age analysis and proactive debt collection</Text>
-          <Text style={styles.responsibility}>→ Payment processing and daily reconciliations</Text>
-          <Text style={styles.responsibility}>→ Credit applications, ITC checks, and credit limit management</Text>
-          <Text style={styles.responsibility}>→ Client statements and professional correspondence</Text>
-          <Text style={styles.responsibility}>→ Emergency Aid and Health & Safety representative</Text>
+          <Text style={styles.responsibility}>- Comprehensive age analysis and proactive debt collection</Text>
+          <Text style={styles.responsibility}>- Payment processing and daily reconciliations</Text>
+          <Text style={styles.responsibility}>- Credit applications, ITC checks, and credit limit management</Text>
+          <Text style={styles.responsibility}>- Client statements and professional correspondence</Text>
+          <Text style={styles.responsibility}>- Emergency Aid and Health & Safety representative</Text>
         </View>
 
         <View style={styles.experienceItem}>
@@ -214,18 +215,27 @@ export const CVPDFDocument = () => (
           <Text style={styles.description}>
             Provided comprehensive sales coordination and administrative support for a dynamic packaging company.
           </Text>
-          <Text style={styles.responsibility}>→ Coordinated all sales-related activities and client communications</Text>
-          <Text style={styles.responsibility}>→ Managed comprehensive administrative functions</Text>
-          <Text style={styles.responsibility}>→ Primary receptionist ensuring professional client experience</Text>
+          <Text style={styles.responsibility}>- Coordinated all sales-related activities and client communications</Text>
+          <Text style={styles.responsibility}>- Managed comprehensive administrative functions</Text>
+          <Text style={styles.responsibility}>- Primary receptionist ensuring professional client experience</Text>
         </View>
 
         <View style={styles.experienceItem}>
           <Text style={styles.jobTitle}>Manager</Text>
           <Text style={styles.company}>Golfpark (Funpark) Welkom</Text>
           <Text style={styles.period}>2019 – 2020 | Welkom, South Africa</Text>
-          <Text style={styles.responsibility}>→ Complete facility management and security protocols</Text>
-          <Text style={styles.responsibility}>→ Staff scheduling and performance management</Text>
-          <Text style={styles.responsibility}>→ Financial oversight and daily reconciliations</Text>
+          <Text style={styles.responsibility}>- Complete facility management and security protocols</Text>
+          <Text style={styles.responsibility}>- Staff scheduling and performance management</Text>
+          <Text style={styles.responsibility}>- Financial oversight and daily reconciliations</Text>
+        </View>
+
+        <View style={styles.experienceItem}>
+          <Text style={styles.jobTitle}>Administrative Assistant</Text>
+          <Text style={styles.company}>Smart Labels</Text>
+          <Text style={styles.period}>2018 – 2019 (1 year) | Welkom, South Africa</Text>
+          <Text style={styles.responsibility}>- General administrative support and office management</Text>
+          <Text style={styles.responsibility}>- Document processing and filing systems</Text>
+          <Text style={styles.responsibility}>- Client communication and scheduling</Text>
         </View>
 
         {/* Education */}
@@ -240,11 +250,11 @@ export const CVPDFDocument = () => (
 
         <View style={styles.experienceItem}>
           <Text style={styles.company}>Health & Safety Certifications (Safe Solution, 2022)</Text>
-          <Text style={styles.responsibility}>→ OHS Regulations</Text>
-          <Text style={styles.responsibility}>→ HIRA Methodology</Text>
-          <Text style={styles.responsibility}>→ Accident Investigation</Text>
-          <Text style={styles.responsibility}>→ Working at Heights</Text>
-          <Text style={styles.responsibility}>→ Legal Liability (OH&SA)</Text>
+          <Text style={styles.responsibility}>- OHS Regulations</Text>
+          <Text style={styles.responsibility}>- HIRA Methodology</Text>
+          <Text style={styles.responsibility}>- Accident Investigation</Text>
+          <Text style={styles.responsibility}>- Working at Heights</Text>
+          <Text style={styles.responsibility}>- Legal Liability (OH&SA)</Text>
         </View>
 
         {/* References */}
@@ -253,13 +263,13 @@ export const CVPDFDocument = () => (
           <View style={{ width: "48%" }}>
             <Text style={styles.company}>Christie Foggit</Text>
             <Text style={styles.description}>Dumansi Trading CC</Text>
-            <Text style={styles.responsibility}>📱 066 241 9748</Text>
-            <Text style={styles.responsibility}>📧 Christie@dumansi.co.za</Text>
+            <Text style={styles.responsibility}>Phone: 066 241 9748</Text>
+            <Text style={styles.responsibility}>Email: Christie@dumansi.co.za</Text>
           </View>
           <View style={{ width: "48%" }}>
             <Text style={styles.company}>Anelda</Text>
             <Text style={styles.description}>MW Packaging (Pty) Ltd</Text>
-            <Text style={styles.responsibility}>📱 082 374 5430</Text>
+            <Text style={styles.responsibility}>Phone: 082 374 5430</Text>
           </View>
         </View>
       </View>
