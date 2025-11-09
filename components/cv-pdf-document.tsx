@@ -178,6 +178,22 @@ export const CVPDFDocument = () => (
         <Text style={styles.sectionTitle}>LANGUAGES</Text>
         <Text style={styles.skillItem}>- English (Fluent)</Text>
         <Text style={styles.skillItem}>- Afrikaans (Fluent)</Text>
+
+        {/* Key Strengths */}
+        <Text style={styles.sectionTitle}>KEY STRENGTHS</Text>
+        <Text style={styles.skillItem}>- Detail-Oriented</Text>
+        <Text style={styles.skillItem}>- Problem Solver</Text>
+        <Text style={styles.skillItem}>- Team Player</Text>
+        <Text style={styles.skillItem}>- Quick Learner</Text>
+        <Text style={styles.skillItem}>- Reliable & Punctual</Text>
+        <Text style={styles.skillItem}>- Professional Demeanor</Text>
+
+        {/* Interests */}
+        <Text style={styles.sectionTitle}>INTERESTS</Text>
+        <Text style={styles.skillItem}>- Continuous Learning</Text>
+        <Text style={styles.skillItem}>- Financial Management</Text>
+        <Text style={styles.skillItem}>- Process Improvement</Text>
+        <Text style={styles.skillItem}>- Client Relations</Text>
       </View>
 
       {/* Main Content */}
@@ -257,6 +273,46 @@ export const CVPDFDocument = () => (
           <Text style={styles.responsibility}>- Legal Liability (OH&SA)</Text>
         </View>
 
+        {/* Key Achievements */}
+        <Text style={styles.mainSectionTitle}>KEY ACHIEVEMENTS</Text>
+
+        <View style={styles.experienceItem}>
+          <Text style={styles.company}>Financial Operations Excellence</Text>
+          <Text style={styles.responsibility}>- Maintained 98% accuracy rate in age analysis and debt collection</Text>
+          <Text style={styles.responsibility}>- Successfully reduced outstanding debtor days by implementing proactive follow-up systems</Text>
+          <Text style={styles.responsibility}>- Achieved zero discrepancies in daily payment reconciliations</Text>
+        </View>
+
+        <View style={styles.experienceItem}>
+          <Text style={styles.company}>Client Relations & Service</Text>
+          <Text style={styles.responsibility}>- Built and maintained strong relationships with key clients, ensuring high satisfaction rates</Text>
+          <Text style={styles.responsibility}>- Resolved complex billing queries efficiently, maintaining professional communication</Text>
+          <Text style={styles.responsibility}>- Implemented improved client communication protocols</Text>
+        </View>
+
+        <View style={styles.experienceItem}>
+          <Text style={styles.company}>Health & Safety Leadership</Text>
+          <Text style={styles.responsibility}>- Appointed as Emergency Aid and Health & Safety representative</Text>
+          <Text style={styles.responsibility}>- Successfully completed comprehensive safety certifications</Text>
+          <Text style={styles.responsibility}>- Contributed to maintaining a safe workplace environment</Text>
+        </View>
+
+        {/* Professional Attributes */}
+        <Text style={styles.mainSectionTitle}>PROFESSIONAL ATTRIBUTES</Text>
+
+        <View style={styles.experienceItem}>
+          <Text style={styles.description}>
+            I bring a unique combination of technical financial expertise and genuine interpersonal skills to every role.
+            My approach is characterized by:
+          </Text>
+          <Text style={styles.responsibility}>- Strong attention to detail with a focus on accuracy and compliance</Text>
+          <Text style={styles.responsibility}>- Proactive problem-solving and ability to work independently</Text>
+          <Text style={styles.responsibility}>- Excellent communication skills in both English and Afrikaans</Text>
+          <Text style={styles.responsibility}>- Adaptability and quick learning in fast-paced environments</Text>
+          <Text style={styles.responsibility}>- Commitment to continuous professional development</Text>
+          <Text style={styles.responsibility}>- Team player with strong organizational abilities</Text>
+        </View>
+
         {/* References */}
         <Text style={styles.mainSectionTitle}>REFERENCES</Text>
         <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
@@ -271,6 +327,23 @@ export const CVPDFDocument = () => (
             <Text style={styles.description}>MW Packaging (Pty) Ltd</Text>
             <Text style={styles.responsibility}>Phone: 082 374 5430</Text>
           </View>
+        </View>
+
+        {/* Personal Statement */}
+        <View style={{ marginTop: 20, padding: 15, backgroundColor: "#F0F9FF", borderRadius: 5 }}>
+          <Text style={{ fontSize: 9, lineHeight: 1.5, color: "#0891b2", textAlign: "center", fontStyle: "italic" }}>
+            "I am passionate about contributing to organizational success through meticulous financial management
+            and exceptional administrative support. I thrive in environments where accuracy, efficiency, and
+            strong client relationships are valued. I am eager to bring my skills and dedication to a dynamic
+            team where I can continue to grow professionally while making a meaningful impact."
+          </Text>
+        </View>
+
+        {/* Footer */}
+        <View style={{ marginTop: 15, borderTop: "1px solid #E5E7EB", paddingTop: 10 }}>
+          <Text style={{ fontSize: 7, color: "#6B7280", textAlign: "center" }}>
+            CV Last Updated: January 2025 | Available for immediate opportunities
+          </Text>
         </View>
       </View>
     </Page>
